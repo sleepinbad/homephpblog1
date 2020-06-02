@@ -3,8 +3,8 @@
         <div class="row">
             <div class="col-lg-8 col-md-10 mx-auto">
                 <div class="page-heading">
-                    <h1>Напишите мне</h1>
-                    <span class="subheading">я постараюсь ответить в течении 24 часов</span>
+                    <h1>Write to me</h1>
+                    <span class="subheading">i will contact with you in 24 hours</span>
                 </div>
             </div>
         </div>
@@ -16,7 +16,7 @@
             <form action="/contact" method="post">
                 <div class="control-group">
                     <div class="form-group floating-label-form-group controls">
-                        <p><input type="text" class="form-control" name="name" placeholder="Имя"></p>
+                        <p><input type="text" class="form-control" name="name" placeholder="Name"></p>
                     </div>
                 </div>
                 <div class="control-group">
@@ -26,13 +26,13 @@
                 </div>
                 <div class="control-group">
                     <div class="form-group floating-label-form-group controls">
-                        <p><textarea rows="5" class="form-control" name="text" placeholder="Сообщение"></textarea></p>
+                        <p><textarea rows="5" class="form-control" name="text" placeholder="Write a message here"></textarea></p>
                     </div>
                 </div>
                 <br>
                 <div id="success"></div>
                 <div class="form-group">
-                    <button type="submit" class="btn btn-secondary" id="sendMessageButton">Отправить</button>
+                    <button type="submit" class="btn btn-secondary" id="sendMessageButton">Send</button>
                 </div>
             </form>
         </div>

@@ -15,17 +15,17 @@
     <body>
         <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
             <div class="container">
-                <a class="navbar-brand" href="/">Я есть блог</a>
+                <a class="navbar-brand" href="/">I'm blog</a>
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fa fa-bars"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="/about">Обо мне</a>
+                            <a class="nav-link" href="/about">About me</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/contact">Обратная связь</a>
+                            <a class="nav-link" href="/contact">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -39,7 +39,7 @@
                     <div class="col-lg-8 col-md-10 mx-auto">
                         <ul class="list-inline text-center">
                             <li class="list-inline-item">
-                                <a href="https://www.youtube.com/user/Shift63770" target="_blank">
+                                <a href="https://www.youtube.com" target="_blank">
                                     <span class="fa-stack fa-lg">
                                         <i class="fa fa-circle fa-stack-2x"></i>
                                         <i class="fa fa-youtube fa-stack-1x fa-inverse"></i>
@@ -47,7 +47,7 @@
                                 </a>
                             </li>
                             <li class="list-inline-item">
-                                <a href="https://vk.com/php.youtube" target="_blank">
+                                <a href="https://vk.com" target="_blank">
                                     <span class="fa-stack fa-lg">
                                         <i class="fa fa-circle fa-stack-2x"></i>
                                         <i class="fa fa-vk fa-stack-1x fa-inverse"></i>
@@ -55,7 +55,7 @@
                                 </a>
                             </li>
                             <li class="list-inline-item">
-                                <a href="/" target="_blank">
+                                <a href="https:/github.com" target="_blank">
                                     <span class="fa-stack fa-lg">
                                         <i class="fa fa-circle fa-stack-2x"></i>
                                         <i class="fa fa-github fa-stack-1x fa-inverse"></i>

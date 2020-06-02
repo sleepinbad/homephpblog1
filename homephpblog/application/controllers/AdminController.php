@@ -24,7 +24,7 @@ class AdminController extends Controller {
 			$_SESSION['admin'] = true;
 			$this->view->location('admin/add');
 		}
-		$this->view->render('Вход');
+		$this->view->render('Log in');
 	}
 
 	public function addAction() {
@@ -34,12 +34,12 @@ class AdminController extends Controller {
 			}
 			$id = $this->model->postAdd($_POST);
 			if (!$id) {
-				$this->view->message('success', 'Ошибка обработки запроса');
+				$this->view->message('success', 'Request processing error');
 			}
 			$this->model->postUploadImage($_FILES['img']['tmp_name'], $id);			
-			$this->view->message('success', 'Пост добавлен');
+			$this->view->message('success', 'Post added');
 		}
-		$this->view->render('Добавить пост');
+		$this->view->render('Add post');
 	
 	}
 
@@ -55,12 +55,12 @@ class AdminController extends Controller {
 			if ($_FILES['img']['tmp_name']) {
 				$this->model->postUploadImage($_FILES['img']['tmp_name'], $this->route['id']);
 			}
-			$this->view->message('success', 'Сохранено');
+			$this->view->message('success', 'Saved');
 		}
 		$vars = [
 			'data' => $this->model->postData($this->route['id'])[0],
 		];
-		$this->view->render('Редактировать пост', $vars);
+		$this->view->render('Edit the post', $vars);
 	}
 
 	public function deleteAction() {
@@ -83,6 +83,6 @@ class AdminController extends Controller {
 			'pagination' => $pagination->get(),
 			'list' => $mainModel->postsList($this->route),
 		];
-		$this->view->render('Посты', $vars);
+		$this->view->render('Posts', $vars);
 	}
 }

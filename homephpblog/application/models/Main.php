@@ -11,14 +11,14 @@ class Main extends Model {
 	public function contactValidate($post) {
 		$nameLen = iconv_strlen($post['name']);
 		$textLen = iconv_strlen($post['text']);
-		if ($nameLen < 3 or $nameLen > 20) {
-			$this->error = 'Имя должно содержать от 3 до 20 символов';
+		if ($nameLen < 2 or $nameLen > 20) {
+			$this->error = 'Name should have from 2 to 20 characters';
 			return false;
 		} elseif (!filter_var($post['email'], FILTER_VALIDATE_EMAIL)) {
-			$this->error = 'E-mail указан неверно';
+			$this->error = 'E-mail isn`t correct, example: blog@gmail.com';
 			return false;
 		} elseif ($textLen < 10 or $textLen > 500) {
-			$this->error = 'Сообщение должно содержать от 10 до 500 символов';
+			$this->error = 'Message must have from 10 to 500 characters';
 			return false;
 		}
 		return true;

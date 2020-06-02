@@ -14,11 +14,11 @@ class MainController extends Controller {
 			'pagination' => $pagination->get(),
 			'list' => $this->model->postsList($this->route),
 		];
-		$this->view->render('Главная страница', $vars);
+		$this->view->render('Main index', $vars);
 	}
 
 	public function aboutAction() {
-		$this->view->render('Обо мне');
+		$this->view->render('About me');
 	}
 
 	public function contactAction() {
@@ -26,10 +26,10 @@ class MainController extends Controller {
 			if (!$this->model->contactValidate($_POST)) {
 				$this->view->message('error', $this->model->error);
 			}
-			mail('nefylusfire@gmail.com', 'Сообщение из блога', $_POST['name'].'|'.$_POST['email'].'|'.$_POST['text']);
-			$this->view->message('success', 'Сообщение отправлено Администратору');
+			mail('matag18378@lywenw.com', 'message from blog', $_POST['name'].'|'.$_POST['email'].'|'.$_POST['text']);
+			$this->view->message('success', 'Message sent');
 		}
-		$this->view->render('Контакты');
+		$this->view->render('Contact');
 	}
 
 	public function postAction() {
@@ -40,7 +40,7 @@ class MainController extends Controller {
 		$vars = [
 			'data' => $adminModel->postData($this->route['id'])[0],
 		];
-		$this->view->render('Пост', $vars);
+		$this->view->render('Post', $vars);
 	}
 
 }
